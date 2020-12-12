@@ -1,4 +1,4 @@
-package com.shengde.e3mall.service.impl;
+package com.shengde.e3mall.service;
 
 import com.shengde.e3mall.entity.TbItem;
 

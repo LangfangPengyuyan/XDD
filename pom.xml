@@ -211,6 +211,7 @@
                 <artifactId>solr-solrj</artifactId>
                 <version>${solrj.version}</version>
             </dependency>
+
             <!-- dubbo相关 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -227,6 +228,7 @@
                 <artifactId>zkclient</artifactId>
                 <version>${zkclient.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-all</artifactId>

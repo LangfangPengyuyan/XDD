@@ -1,14 +1,12 @@
 package com.shengde.e3mall.controller;
 
 import com.shengde.e3mall.entity.TbItem;
-import com.shengde.e3mall.service.impl.ItemService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.shengde.e3mall.service.ItemService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
-import javax.xml.ws.spi.WebServiceFeatureAnnotation;
 
 /**
  * 商品管理

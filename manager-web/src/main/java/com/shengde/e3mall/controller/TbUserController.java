@@ -30,6 +30,7 @@ public class TbUserController {
      */
     @GetMapping("selectOne")
     public TbUser selectOne(Integer id) {
+
         return this.tbUserService.queryById(id);
     }
 
