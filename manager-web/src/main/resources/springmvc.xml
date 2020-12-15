@@ -19,6 +19,11 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
+    <!--资源映射-->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+
+
     <!-- 引用dubbo服务 -->
     <dubbo:application name="manager-web"/>
     <dubbo:registry protocol="zookeeper" address="192.168.25.154:2181,192.168.25.154:2182,192.168.25.154:2183"/>
