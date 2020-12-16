@@ -1,0 +1,29 @@
+# Created by .ignore support plugin (hsz.mobi)
+### XDD template
+
+.idea/dictionaries/
+.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+manager-dao/src/test/
+manager-dao/target/generated-sources/
+manager-dao/target/manager-dao.jar
+manager-dao/target/maven-archiver/
+manager-dao/target/maven-status/
+manager-interface/src/main/java/com/shengde/e3mall/entity/
+manager-interface/src/main/resources/
+manager-interface/src/test/
+manager-interface/target/
+manager-pojo/src/main/resources/
+manager-pojo/src/test/
+manager-pojo/target/generated-sources/
+manager-service/src/main/webapp/
+manager-service/src/test/
+manager-service/target/classes/META-INF/
+manager-service/target/classes/com/shengde/e3mall/service/ItemService.class
+manager-service/target/generated-sources/
+manager-service/web/
+manager-web/target/classes/log4j.properties
+manager-web/target/generated-sources/
+manager-web/target/manager-web.war
+manager-web/target/manager-web/
