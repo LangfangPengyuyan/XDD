@@ -1,24 +1,24 @@
 package com.shengde.e3mall.service;
 
-import com.shengde.e3mall.entity.*;
+import com.shengde.e3mall.entity.TbOrderItem;
 
 import java.util.List;
 
 /**
- * (TbItemParamItem)表服务接口
+ * (TbOrderItem)表服务接口
  *
  * @author makejava
- * @since 2020-12-07 11:46:10
+ * @since 2020-12-07 11:46:12
  */
-public interface TbItemParamItemService {
+public interface TbOrderItemService {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param id 主键
+     * @param 主键
      * @return 实例对象
      */
-    TbItemParamItem queryById(Integer id);
+    TbOrderItem queryById(int id);
 
     /**
      * 查询多条数据
@@ -27,30 +27,30 @@ public interface TbItemParamItemService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    List<TbItemParamItem> queryAllByLimit(int offset, int limit);
+    List<TbOrderItem> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param tbItemParamItem 实例对象
+     * @param tbOrderItem 实例对象
      * @return 实例对象
      */
-    TbItemParamItem insert(TbItemParamItem tbItemParamItem);
+    TbOrderItem insert(TbOrderItem tbOrderItem);
 
     /**
      * 修改数据
      *
-     * @param tbItemParamItem 实例对象
+     * @param tbOrderItem 实例对象
      * @return 实例对象
      */
-    TbItemParamItem update(TbItemParamItem tbItemParamItem);
+    TbOrderItem update(TbOrderItem tbOrderItem);
 
     /**
      * 通过主键删除数据
      *
-     * @param id 主键
+     * @param 主键
      * @return 是否成功
      */
-    boolean deleteById(Integer id);
+    boolean deleteById();
 
 }

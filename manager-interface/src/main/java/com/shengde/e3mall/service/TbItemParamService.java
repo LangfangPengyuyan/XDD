@@ -1,16 +1,16 @@
 package com.shengde.e3mall.service;
 
-import com.shengde.e3mall.entity.*;
+import com.shengde.e3mall.entity.TbItemParam;
 
 import java.util.List;
 
 /**
- * (TbItemCat)表服务接口
+ * (TbItemParam)表服务接口
  *
  * @author makejava
- * @since 2020-12-07 11:46:05
+ * @since 2020-12-07 11:46:08
  */
-public interface TbItemCatService {
+public interface TbItemParamService {
 
     /**
      * 通过ID查询单条数据
@@ -18,7 +18,7 @@ public interface TbItemCatService {
      * @param id 主键
      * @return 实例对象
      */
-    TbItemCat queryById(Integer id);
+    TbItemParam queryById(Integer id);
 
     /**
      * 查询多条数据
@@ -27,23 +27,23 @@ public interface TbItemCatService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    List<TbItemCat> queryAllByLimit(int offset, int limit);
+    List<TbItemParam> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param tbItemCat 实例对象
+     * @param tbItemParam 实例对象
      * @return 实例对象
      */
-    TbItemCat insert(TbItemCat tbItemCat);
+    TbItemParam insert(TbItemParam tbItemParam);
 
     /**
      * 修改数据
      *
-     * @param tbItemCat 实例对象
+     * @param tbItemParam 实例对象
      * @return 实例对象
      */
-    TbItemCat update(TbItemCat tbItemCat);
+    TbItemParam update(TbItemParam tbItemParam);
 
     /**
      * 通过主键删除数据

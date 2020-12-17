@@ -1,24 +1,24 @@
 package com.shengde.e3mall.service;
 
-import com.shengde.e3mall.entity.*;
+import com.shengde.e3mall.entity.TbUser;
 
 import java.util.List;
 
 /**
- * (TbOrderShipping)表服务接口
+ * (TbUser)表服务接口
  *
  * @author makejava
- * @since 2020-12-07 11:46:14
+ * @since 2020-12-07 11:46:15
  */
-public interface TbOrderShippingService {
+public interface TbUserService {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param 主键
+     * @param id 主键
      * @return 实例对象
      */
-    TbOrderShipping queryById(int id);
+    TbUser queryById(Integer id);
 
     /**
      * 查询多条数据
@@ -27,30 +27,30 @@ public interface TbOrderShippingService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    List<TbOrderShipping> queryAllByLimit(int offset, int limit);
+    List<TbUser> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param tbOrderShipping 实例对象
+     * @param tbUser 实例对象
      * @return 实例对象
      */
-    TbOrderShipping insert(TbOrderShipping tbOrderShipping);
+    TbUser insert(TbUser tbUser);
 
     /**
      * 修改数据
      *
-     * @param tbOrderShipping 实例对象
+     * @param tbUser 实例对象
      * @return 实例对象
      */
-    TbOrderShipping update(TbOrderShipping tbOrderShipping);
+    TbUser update(TbUser tbUser);
 
     /**
      * 通过主键删除数据
      *
-     * @param 主键
+     * @param id 主键
      * @return 是否成功
      */
-    boolean deleteById();
+    boolean deleteById(Integer id);
 
 }

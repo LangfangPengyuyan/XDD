@@ -1,7 +1,6 @@
 package com.shengde.e3mall.controller;
 
 import com.shengde.e3mall.entity.TbUser;
-import com.shengde.e3mall.service.TbUserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

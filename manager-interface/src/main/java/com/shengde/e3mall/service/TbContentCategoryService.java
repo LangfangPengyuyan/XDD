@@ -1,15 +1,16 @@
 package com.shengde.e3mall.service;
-import com.shengde.e3mall.entity.*;
+
+import com.shengde.e3mall.entity.TbContentCategory;
 
 import java.util.List;
 
 /**
- * (TbItem)表服务接口
+ * (TbContentCategory)表服务接口
  *
  * @author makejava
- * @since 2020-12-07 11:46:03
+ * @since 2020-12-07 11:45:59
  */
-public interface TbItemService {
+public interface TbContentCategoryService {
 
     /**
      * 通过ID查询单条数据
@@ -17,7 +18,7 @@ public interface TbItemService {
      * @param id 主键
      * @return 实例对象
      */
-    TbItem queryById(Integer id);
+    TbContentCategory queryById(Integer id);
 
     /**
      * 查询多条数据
@@ -26,23 +27,23 @@ public interface TbItemService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    List<TbItem> queryAllByLimit(int offset, int limit);
+    List<TbContentCategory> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param tbItem 实例对象
+     * @param tbContentCategory 实例对象
      * @return 实例对象
      */
-    TbItem insert(TbItem tbItem);
+    TbContentCategory insert(TbContentCategory tbContentCategory);
 
     /**
      * 修改数据
      *
-     * @param tbItem 实例对象
+     * @param tbContentCategory 实例对象
      * @return 实例对象
      */
-    TbItem update(TbItem tbItem);
+    TbContentCategory update(TbContentCategory tbContentCategory);
 
     /**
      * 通过主键删除数据

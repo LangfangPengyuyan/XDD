@@ -1,7 +1,6 @@
 package com.shengde.e3mall.controller;
 
 import com.shengde.e3mall.entity.TbContentCategory;
-import com.shengde.e3mall.service.TbContentCategoryService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

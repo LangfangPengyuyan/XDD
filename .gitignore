@@ -27,3 +27,4 @@ manager-web/target/classes/log4j.properties
 manager-web/target/generated-sources/
 manager-web/target/manager-web.war
 manager-web/target/manager-web/
+manager-web/target/classes/com/shengde/e3mall/controller/PageController.class

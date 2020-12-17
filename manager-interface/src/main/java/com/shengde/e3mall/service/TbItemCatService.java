@@ -1,24 +1,24 @@
 package com.shengde.e3mall.service;
-import com.shengde.e3mall.entity.*;
+
+import com.shengde.e3mall.entity.TbItemCat;
 
 import java.util.List;
 
-
 /**
- * (TbOrder)表服务接口
+ * (TbItemCat)表服务接口
  *
  * @author makejava
- * @since 2020-12-07 11:46:11
+ * @since 2020-12-07 11:46:05
  */
-public interface TbOrderService {
+public interface TbItemCatService {
 
     /**
      * 通过ID查询单条数据
      *
-     * @param 主键
+     * @param id 主键
      * @return 实例对象
      */
-    TbOrder queryById(int id);
+    TbItemCat queryById(Integer id);
 
     /**
      * 查询多条数据
@@ -27,30 +27,30 @@ public interface TbOrderService {
      * @param limit  查询条数
      * @return 对象列表
      */
-    List<TbOrder> queryAllByLimit(int offset, int limit);
+    List<TbItemCat> queryAllByLimit(int offset, int limit);
 
     /**
      * 新增数据
      *
-     * @param tbOrder 实例对象
+     * @param tbItemCat 实例对象
      * @return 实例对象
      */
-    TbOrder insert(TbOrder tbOrder);
+    TbItemCat insert(TbItemCat tbItemCat);
 
     /**
      * 修改数据
      *
-     * @param tbOrder 实例对象
+     * @param tbItemCat 实例对象
      * @return 实例对象
      */
-    TbOrder update(TbOrder tbOrder);
+    TbItemCat update(TbItemCat tbItemCat);
 
     /**
      * 通过主键删除数据
      *
-     * @param 主键
+     * @param id 主键
      * @return 是否成功
      */
-    boolean deleteById();
+    boolean deleteById(Integer id);
 
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace=".com.shengde.e3mall.dao.TbContentCategoryDao">
 
-    <resultMap type=".com.shengde.e3mall.entity.TbContentCategory" id="TbContentCategoryMap">
+    <resultMap type=".4com.shengde.e3mall.entity.TbContentCategory" id="TbContentCategoryMap">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="parentId" column="parent_id" jdbcType="INTEGER"/>
         <result property="name" column="name" jdbcType="VARCHAR"/>
