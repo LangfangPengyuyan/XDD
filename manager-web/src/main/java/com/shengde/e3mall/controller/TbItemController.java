@@ -1,6 +1,8 @@
 package com.shengde.e3mall.controller;
 
 import com.shengde.e3mall.entity.TbItem;
+import com.shengde.e3mall.service.TbItemService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +22,7 @@ public class TbItemController {
     /**
      * 服务对象
      */
-    @Resource
+    @Autowired
     private TbItemService tbItemService;
 
     /**
