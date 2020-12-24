@@ -15,7 +15,7 @@ import java.util.List;
  * @author makejava
  * @since 2020-12-07 11:46:03
  */
-@Service("tbItemService")
+@Service
 public class TbItemServiceImpl implements TbItemService {
     @Resource
     private TbItemDao tbItemDao;
