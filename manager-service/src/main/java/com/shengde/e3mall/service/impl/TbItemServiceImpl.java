@@ -3,6 +3,7 @@ import com.shengde.e3mall.dao.TbItemDao;
 import com.shengde.e3mall.entity.*;
 
 import com.shengde.e3mall.service.TbItemService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -17,7 +18,8 @@ import java.util.List;
  */
 @Service
 public class TbItemServiceImpl implements TbItemService {
-    @Resource
+
+    @Autowired
     private TbItemDao tbItemDao;
 
     /**

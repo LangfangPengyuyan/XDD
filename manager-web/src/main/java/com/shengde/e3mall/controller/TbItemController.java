@@ -17,7 +17,7 @@ import javax.annotation.Resource;
  * @since 2020-12-07 21:37:42
  */
 @RestController
-@RequestMapping("tbItem")
+@RequestMapping("tbItemController")
 public class TbItemController {
     /**
      * 服务对象

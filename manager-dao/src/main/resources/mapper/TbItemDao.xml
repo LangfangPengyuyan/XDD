@@ -16,6 +16,12 @@
         <result property="updated" column="updated" jdbcType="TIMESTAMP"/>
     </resultMap>
 
+
+
+    <select id="selectByExample" resultType="com.shengde.e3mall.entity.TbItem">
+        select * from tb_item
+    </select>
+
     <!--查询单个-->
     <select id="queryById" resultMap="TbItemMap">
         select id,
@@ -91,6 +97,7 @@
             </if>
         </where>
     </select>
+
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">

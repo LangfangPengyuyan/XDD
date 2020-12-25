@@ -14,7 +14,6 @@ public class PageController {
     @RequestMapping("/")
     public String showTndex(){
         return "index";
-
     }
 
     @RequestMapping("/{page}")
