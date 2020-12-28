@@ -14,12 +14,6 @@ import java.util.List;
 public interface TbItemDao {
 
     /**
-     * 分页
-     */
-
-    TbItem selectByExample();
-
-    /**
      * 通过ID查询单条数据
      *
      * @param id 主键

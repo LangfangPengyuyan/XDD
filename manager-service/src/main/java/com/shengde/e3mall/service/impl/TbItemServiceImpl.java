@@ -1,12 +1,14 @@
 package com.shengde.e3mall.service.impl;
-import com.shengde.e3mall.dao.TbItemDao;
-import com.shengde.e3mall.entity.*;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.shengde.e3mall.common.pojo.EasyUIDataGridResult;
+import com.shengde.e3mall.dao.TbItemDao;
+import com.shengde.e3mall.entity.TbItem;
 import com.shengde.e3mall.service.TbItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 
@@ -22,6 +24,9 @@ public class TbItemServiceImpl implements TbItemService {
     @Autowired
     private TbItemDao tbItemDao;
 
+    @Autowired
+    TbItemDao itemMapper;
+
     /**
      * 通过ID查询单条数据
      *
@@ -31,6 +36,24 @@ public class TbItemServiceImpl implements TbItemService {
     @Override
     public TbItem queryById(Integer id) {
         return this.tbItemDao.queryById(id);
+    }
+
+
+    @Override
+    public EasyUIDataGridResult getItemList(int page, int rows) {
+        //设置分页信息
+        PageHelper.startPage(page, rows);
+        //执行查询
+        List<TbItem> list = itemMapper.queryAll(new TbItem());
+        //创建一个返回值对象
+        EasyUIDataGridResult result = new EasyUIDataGridResult();
+        result.setRows(list);
+        //取分页信息
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        //取总记录数
+        long total = pageInfo.getTotal();
+        result.setTotal(total);
+        return result;
     }
 
     /**

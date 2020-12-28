@@ -51,7 +51,7 @@
     </select>
 
     <!--通过实体作为筛选条件查询-->
-    <select id="queryAll" resultMap="TbItemMap">
+    <select id="queryAll" resultMap="TbItemMap" parameterType="com.shengde.e3mall.entity.TbItem">
         select
         id, title, sell_point, price, num, barcode, image, cid, status, created, updated
         from e3mall.tb_item
@@ -91,6 +91,7 @@
             </if>
         </where>
     </select>
+
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">

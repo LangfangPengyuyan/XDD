@@ -16,12 +16,6 @@
         <result property="updated" column="updated" jdbcType="TIMESTAMP"/>
     </resultMap>
 
-
-
-    <select id="selectByExample" resultType="com.shengde.e3mall.entity.TbItem">
-        select * from tb_item
-    </select>
-
     <!--查询单个-->
     <select id="queryById" resultMap="TbItemMap">
         select id,
@@ -57,7 +51,7 @@
     </select>
 
     <!--通过实体作为筛选条件查询-->
-    <select id="queryAll" resultMap="TbItemMap">
+    <select id="queryAll" resultMap="TbItemMap" parameterType="com.shengde.e3mall.entity.TbItem">
         select
         id, title, sell_point, price, num, barcode, image, cid, status, created, updated
         from e3mall.tb_item

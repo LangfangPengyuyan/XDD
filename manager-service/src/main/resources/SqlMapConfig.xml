@@ -7,7 +7,7 @@
 
     <!--引入pageHelper分页插件，注意plugin标签位置-->
     <plugins>
-        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+        <plugin interceptor="com.github.pagehelper.PageHelper">
             <!--设置数据库类型-->
             <property name="dialect" value="mysql"/>
         </plugin>

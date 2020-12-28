@@ -13,6 +13,7 @@
         <module>manager-pojo</module>
         <module>manager-service</module>
         <module>manager-web</module>
+        <module>common</module>
     </modules>
 
     <packaging>pom</packaging>
