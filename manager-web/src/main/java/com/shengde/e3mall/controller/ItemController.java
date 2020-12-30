@@ -4,10 +4,10 @@ import com.shengde.e3mall.common.pojo.EasyUIDataGridResult;
 import com.shengde.e3mall.entity.TbItem;
 import com.shengde.e3mall.service.TbItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 
 
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author makejava
  * @since 2020-12-07 21:37:42
  */
-@RestController
+@Controller
 @RequestMapping
 public class ItemController {
     /**
