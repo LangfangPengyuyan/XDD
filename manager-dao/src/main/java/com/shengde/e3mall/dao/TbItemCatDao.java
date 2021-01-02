@@ -21,7 +21,7 @@ public interface TbItemCatDao {
      */
     TbItemCat queryById(Integer id);
 
-    List<TbItemCat> queryAll1(TbItemCat tbItemCat);
+
 
     /**
      * 查询指定行数据

@@ -14,7 +14,8 @@ public class TbItemCat implements Serializable {
 
     private Integer id;
 
-    private Integer parentId;
+
+    private long parentId;
 
     private String name;
 
@@ -37,13 +38,14 @@ public class TbItemCat implements Serializable {
         this.id = id;
     }
 
-    public Integer getParentId() {
+    public long getParentId() {
         return parentId;
     }
 
-    public void setParentId(Integer parentId) {
+    public void setParentId(long parentId) {
         this.parentId = parentId;
     }
+
 
     public String getName() {
         return name;

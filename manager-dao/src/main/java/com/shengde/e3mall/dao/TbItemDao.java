@@ -19,7 +19,7 @@ public interface TbItemDao {
      * @param id 主键
      * @return 实例对象
      */
-    TbItem queryById(Integer id);
+    com.shengde.e3mall.entity.TbItem queryById(Integer id);
 
     /**
      * 查询指定行数据

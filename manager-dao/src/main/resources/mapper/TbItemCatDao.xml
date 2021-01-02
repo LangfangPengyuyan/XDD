@@ -42,43 +42,10 @@
     </select>
 
     <!--通过实体作为筛选条件查询-->
-    <select id="queryAll" resultMap="TbItemCatMap">
-        select
-        id, parent_id, name, status, sort_order, is_parent, created, updated
-        from e3mall.tb_item_cat
-        <where>
-            <if test="id != null">
-                and id = #{id}
-            </if>
-            <if test="parentId != null">
-                and parent_id = #{parentId}
-            </if>
-            <if test="name != null and name != ''">
-                and name = #{name}
-            </if>
-            <if test="status != null">
-                and status = #{status}
-            </if>
-            <if test="sortOrder != null">
-                and sort_order = #{sortOrder}
-            </if>
-            <if test="isParent != null">
-                and is_parent = #{isParent}
-            </if>
-            <if test="created != null">
-                and created = #{created}
-            </if>
-            <if test="updated != null">
-                and updated = #{updated}
-            </if>
-        </where>
+    <select id="queryAll" resultMap="TbItemCatMap" parameterType="com.shengde.e3mall.entity.TbItemCat">
+        select * from e3mall.tb_item_cat where parent_id = #{parentId}
     </select>
 
-    <select id="queryAll1" resultMap="TbItemCatMap">
-        select *
-        from e3mall.tb_item_cat
-
-    </select>
 
 
     <!--新增所有列-->
