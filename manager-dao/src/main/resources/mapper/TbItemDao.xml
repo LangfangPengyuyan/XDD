@@ -95,8 +95,7 @@
 
     <!--新增所有列-->
     <insert id="insert" keyProperty="id" useGeneratedKeys="true">
-        insert into e3mall.tb_item(title, sell_point, price, num, barcode, image, cid, status, created, updated)
-        values (#{title}, #{sellPoint}, #{price}, #{num}, #{barcode}, #{image}, #{cid}, #{status}, #{created},
+        insert into e3mall.tb_item(id,title, sell_point, price, num, barcode, image, cid, status, created, updated) values (#{id},#{title}, #{sellPoint}, #{price}, #{num}, #{barcode}, #{image}, #{cid}, #{status}, #{created},
                 #{updated})
     </insert>
 

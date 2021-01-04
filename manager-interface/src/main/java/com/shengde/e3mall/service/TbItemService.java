@@ -1,6 +1,7 @@
 package com.shengde.e3mall.service;
 
 
+import com.shengde.e3mall.common.utils.E3Result;
 import com.shengde.e3mall.entity.TbItem;
 import com.shengde.e3mall.common.pojo.EasyUIDataGridResult;
 import java.util.List;
@@ -23,6 +24,9 @@ public interface TbItemService {
 
 
     EasyUIDataGridResult getItemList(int page,int rows);
+
+
+    E3Result addItem(TbItem item, String desc);
 
     /**
      * 查询多条数据
