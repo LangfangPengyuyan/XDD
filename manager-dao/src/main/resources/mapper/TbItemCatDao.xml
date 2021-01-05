@@ -13,21 +13,6 @@
         <result property="updated" column="updated" jdbcType="TIMESTAMP"/>
     </resultMap>
 
-    <!--查询单个-->
-    <select id="queryById" resultMap="TbItemCatMap">
-        select id,
-               parent_id,
-               name,
-               status,
-               sort_order,
-               is_parent,
-               created,
-               updated
-        from e3mall.tb_item_cat
-        where id = #{id}
-    </select>
-
-
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="TbItemCatMap" parameterType="com.shengde.e3mall.entity.TbItemCat">
         select * from e3mall.tb_item_cat where parent_id = #{parentId}

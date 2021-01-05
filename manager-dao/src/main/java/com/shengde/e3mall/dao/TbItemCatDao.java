@@ -13,14 +13,6 @@ import java.util.List;
  */
 public interface TbItemCatDao {
 
-    /**
-     * 通过ID查询单条数据
-     *
-     * @param id 主键
-     * @return 实例对象
-     */
-    TbItemCat queryById(Integer id);
-
 
     /**
      * 通过实体作为筛选条件查询
