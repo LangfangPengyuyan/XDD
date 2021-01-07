@@ -15,7 +15,12 @@
 
     <!--通过实体作为筛选条件查询-->
     <select id="queryAll" resultMap="TbItemCatMap" parameterType="com.shengde.e3mall.entity.TbItemCat">
-        select * from e3mall.tb_item_cat where parent_id = #{parentId}
+        select
+               *
+        from
+             e3mall.tb_item_cat
+        where
+              parent_id = #{parentId}
     </select>
 
 

@@ -14,7 +14,7 @@
         <module>manager-service</module>
         <module>manager-web</module>
         <module>common</module>
-        <module>portal-web</module>
+
     </modules>
 
     <packaging>pom</packaging>
