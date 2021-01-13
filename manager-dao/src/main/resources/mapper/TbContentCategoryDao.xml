@@ -8,7 +8,7 @@
         <result property="name" column="name" jdbcType="VARCHAR"/>
         <result property="status" column="status" jdbcType="INTEGER"/>
         <result property="sortOrder" column="sort_order" jdbcType="VARCHAR"/>
-        <result property="isParent" column="is_parent" jdbcType="VARCHAR"/>
+
         <result property="created" column="created" jdbcType="TIMESTAMP"/>
         <result property="updated" column="updated" jdbcType="TIMESTAMP"/>
     </resultMap>
@@ -24,7 +24,43 @@
                created,
                updated
         from e3mall.tb_content_category
-        where id = #{id}
+        where parent_id = #{parentId}
     </select>
 
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="TbContentCategoryMap" parameterType="com.shengde.e3mall.entity.TbContentCategory">
+        select
+        *
+        from e3mall.tb_content_category
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+
+            <if test="parentId != null">
+                and parent_id = #{parentId}
+            </if>
+            <if test="name != null and sellPoint != ''">
+                and name = #{name}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="sortOrder != null and sortOrder != ''">
+                and sort_order = #{sortOrder}
+            </if>
+            <if test="isParent != null ">
+                and is_parent = #{isParent}
+            </if>
+        </where>
+    </select>
+
+
+    <insert id="insert" parameterType="com.shengde.e3mall.entity.TbContentCategory">
+        <selectKey keyProperty="id" resultType="int" order="AFTER" id="">
+            select last_insert_id(),
+        </selectKey>
+
+
+    </insert>
 </mapper>

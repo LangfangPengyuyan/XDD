@@ -6,7 +6,16 @@ public class EasyUITreeNode implements Serializable {
 
     private long id;
     private String text;
-    private String state;
+
+    private boolean state;
+
+    public boolean getState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
 
     public long getId() {
         return id;
@@ -24,11 +33,4 @@ public class EasyUITreeNode implements Serializable {
         this.text = text;
     }
 
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
 }

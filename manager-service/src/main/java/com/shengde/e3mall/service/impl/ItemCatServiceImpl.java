@@ -20,7 +20,7 @@ public class ItemCatServiceImpl implements ItemCatService {
     private TbItemCatDao tbItemCatDao;
 
     @Override
-    public List<EasyUITreeNode> getItemCatlist(long parentId) {
+    public List<EasyUITreeNode> getItemCatlist(int parentId) {
 
         TbItemCat tbItemCat = new TbItemCat();
         tbItemCat.setParentId(parentId);
@@ -35,7 +35,7 @@ public class ItemCatServiceImpl implements ItemCatService {
             //设置属性
             node.setId(i.getId());
             node.setText(i.getName());
-            node.setState(i.getIsParent()?"closed":"open");
+            node.setState(Boolean.parseBoolean(i.getIsParent()?"closed":"open"));
 
             //添加到结果列表
             resultList.add(node);
